@@ -73,6 +73,10 @@ public class Vector {
     public String toString() {
         return Arrays.toString(data);
     }
+
+    public double get(int i) {
+        return data[i];
+    }
 }
 
 class IllegalVectorDimensionsException extends MatrixDimensionException {

@@ -129,6 +129,10 @@ public class Matrix {
         throw new MatrixDimensionException("This matrix is no column or row matrix, but has dimensions " + m + "x" + n);
     }
 
+    public double get(int i, int j) {
+        return mat[i][j];
+    }
+
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
