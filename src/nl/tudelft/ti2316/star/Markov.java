@@ -23,16 +23,13 @@ public class Markov {
     }
 
     public static void main(String[] args) {
-        print(0);
-        long i = 0;
-        while (i < 3000) {
-            i++;
-            simulate();
+        for (long i = 0; i <= 3000; i++) {
             if (       (i <= 5)
                     || (i <= 25 && i % 5 == 0)
                     || (i <= 100 && i % 25 == 0)
                     || (i <= 5000 && i % 100 == 0))
                 print(i);
+            simulate();
         }
         System.out.println("Sumprob = " + probs.sum());
     }
